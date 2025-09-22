@@ -53,6 +53,11 @@ export type IconNames =
   | "sun"
   | "test-tube"
   | "trophy"
+  | "camera"
+  | "photo"
+  | "video"
+  | "graphic-design"
+  | "brush"
 
 export type IconPaths = Record<IconNames, string>
 

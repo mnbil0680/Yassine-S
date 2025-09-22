@@ -10,8 +10,8 @@ import type {
 import { type ImageOutputFormat } from "astro"
 
 export const AUTHOR: Author = {
-  NAME: "Brendon Smith",
-  EMAIL: "YndzQGJ3cy5iaW8=",
+  NAME: "Yassine Soufa",
+  EMAIL: "cy55YXNzaW5lQHNvdWZhcHJvZC5jb20=",
 }
 
 export const SITE: Site = {
@@ -40,34 +40,19 @@ export const WORK: Metadata = {
 }
 
 export const PROJECTS: Metadata = {
-  DESCRIPTION: `${AUTHOR.NAME}'s open source software projects`,
+  DESCRIPTION: `${AUTHOR.NAME}'s graphic design projects`,
   HREF: "/projects",
   TITLE: "Projects",
 }
 
 export const SOCIALS: Socials = [
   {
-    HREF: "https://github.com/br3ndonland",
-    ICON: "github-logo",
-    TITLE: "GitHub",
-  },
-  {
-    HREF: "https://www.linkedin.com/in/br3ndonland",
-    ICON: "linkedin-logo",
-    TITLE: "LinkedIn",
-  },
-  {
-    HREF: "https://orcid.org/0000-0001-6615-8677",
-    ICON: "orcid-logo",
-    TITLE: "ORCID",
-  },
-  {
-    HREF: "https://drive.proton.me/urls/0AJVTZX43M#s1g7db0PIAPM",
+    HREF: "https://www.swisstransfer.com/d/03977d39-e592-4aaf-8e9c-c96cc0056ada",
     ICON: "read-cv-logo",
     TITLE: "CV",
   },
   {
-    HREF: "https://drive.proton.me/urls/ZG5H62TW6R#BZQbWoQNwZsf",
+    HREF: "https://www.swisstransfer.com/d/03977d39-e592-4aaf-8e9c-c96cc0056ada",
     ICON: "read-cv-logo",
     TITLE: "Resume",
   },
@@ -115,6 +100,7 @@ export const ICON_PATHS: IconPaths = {
   "rocket-launch": `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M94.1 184.6c-11.4 33.9-56.6 33.9-56.6 33.9s0-45.2 33.9-56.6m124.5-56.5L128 173.3 82.7 128l67.9-67.9C176.3 34.4 202 34.7 213 36.3a7.8 7.8 0 0 1 6.7 6.7c1.6 11 1.9 36.7-23.8 62.4Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M184.6 116.7v64.6a8 8 0 0 1-2.4 5.6l-32.3 32.4a8 8 0 0 1-13.5-4.1l-8.4-41.9m11.3-101.9H74.7a8 8 0 0 0-5.6 2.4l-32.4 32.3a8 8 0 0 0 4.1 13.5l41.9 8.4"/>`,
   "terminal-window": `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"/><rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"/>`,
   "test-tube": `<path d="M237.66,86.34l-60-60a8,8,0,0,0-11.32,0L37.11,155.57a44.77,44.77,0,0,0,63.32,63.32L212.32,107l22.21-7.4a8,8,0,0,0,3.13-13.25ZM89.11,207.57a28.77,28.77,0,0,1-40.68-40.68l28.8-28.8c8.47-2.9,21.75-4,39.07,5,10.6,5.54,20.18,8,28.56,8.73ZM205.47,92.41a8,8,0,0,0-3.13,1.93l-39.57,39.57c-8.47,2.9-21.75,4-39.07-5-10.6-5.54-20.18-8-28.56-8.73L172,43.31,217.19,88.5Z"></path>`,
+  "graphic-design": `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M96 96h64v64H96z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M216 40v176a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h160a8 8 0 0 1 8 8ZM80 224v-48M176 224v-48M40 80h176M40 176h176"/><circle cx="68" cy="60" r="8" fill="currentColor"/><circle cx="88" cy="60" r="8" fill="currentColor"/><circle cx="108" cy="60" r="8" fill="currentColor"/>`,
   atom: `<path d="M196.12,128c24.65-34.61,37.22-70.38,19.74-87.86S162.61,35.23,128,59.88C93.39,35.23,57.62,22.66,40.14,40.14S35.23,93.39,59.88,128c-24.65,34.61-37.22,70.38-19.74,87.86h0c5.63,5.63,13.15,8.14,21.91,8.14,18.48,0,42.48-11.17,66-27.88C151.47,212.83,175.47,224,194,224c8.76,0,16.29-2.52,21.91-8.14h0C233.34,198.38,220.77,162.61,196.12,128Zm8.43-76.55c7.64,7.64,2.48,32.4-18.52,63.28a300.33,300.33,0,0,0-21.19-23.57A300.33,300.33,0,0,0,141.27,70C172.15,49,196.91,43.8,204.55,51.45ZM176.29,128a289.14,289.14,0,0,1-22.76,25.53A289.14,289.14,0,0,1,128,176.29a289.14,289.14,0,0,1-25.53-22.76A289.14,289.14,0,0,1,79.71,128,298.62,298.62,0,0,1,128,79.71a289.14,289.14,0,0,1,25.53,22.76A289.14,289.14,0,0,1,176.29,128ZM51.45,51.45c2.2-2.21,5.83-3.35,10.62-3.35C73.89,48.1,92.76,55,114.72,70A304,304,0,0,0,91.16,91.16,300.33,300.33,0,0,0,70,114.73C49,83.85,43.81,59.09,51.45,51.45Zm0,153.1C43.81,196.91,49,172.15,70,141.27a300.33,300.33,0,0,0,21.19,23.57A304.18,304.18,0,0,0,114.73,186C83.85,207,59.09,212.2,51.45,204.55Zm153.1,0c-7.64,7.65-32.4,2.48-63.28-18.52a304.18,304.18,0,0,0,23.57-21.19A300.33,300.33,0,0,0,186,141.27C207,172.15,212.19,196.91,204.55,204.55ZM140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"></path>`,
   cloud: `<path d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96c1.1,0,2.2,0,3.29.11A88,88,0,0,0,72,128a8,8,0,0,0,16,0,72,72,0,1,1,72,72Z"></path>`,
   code: `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m64 88-48 40 48 40m128-80 48 40-48 40M160 40 96 216"/>`,
@@ -126,4 +112,9 @@ export const ICON_PATHS: IconPaths = {
   strategy: `<circle cx="68" cy="188" r="28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m40 72 40 40m0-40-40 40m136 56 40 40m0-40-40 40M136 80V40h40"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m136 40 16 16c40 40 8 88-24 96"/>`,
   sun: `<circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14"/>`,
   trophy: `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M56 56v55.1c0 39.7 31.8 72.6 71.5 72.9a72 72 0 0 0 72.5-72V56a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8Zm40 168h64m-32-40v40"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M198.2 128h9.8a32 32 0 0 0 32-32V80a8 8 0 0 0-8-8h-32M58 128H47.9a32 32 0 0 1-32-32V80a8 8 0 0 1 8-8h32"/>`,
+  camera: `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M208 56H48a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 56-12-24h40l12 24"/><circle cx="128" cy="132" r="36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>`,
+  photo: `<rect width="192" height="144" x="32" y="56" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="8"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M32 168 68 132a8 8 0 0 1 11.31 0l20 20a8 8 0 0 0 11.32 0L148 114.34a8 8 0 0 1 11.31 0L224 176"/><circle cx="156" cy="100" r="12" fill="currentColor"/>`,
+  video: `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m162.83 90.83 56.47-33.88A8 8 0 0 1 232 64v128a8 8 0 0 1-12.7 6.05l-56.47-33.88"/><rect width="128" height="128" x="32" y="64" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="16"/>`,
+  brush: `<path d="M232,32a8,8,0,0,0-8-8c-44.08,0-89.31,49.71-114.43,82.63A60,60,0,0,0,32,164c0,30.88-19.54,44.73-20.47,45.37A8,8,0,0,0,16,224H92a60,60,0,0,0,57.37-77.57C182.3,121.31,232,76.08,232,32ZM92,208H34.63C41.38,198.41,48,183.92,48,164a44,44,0,1,1,44,44Zm32.42-94.45q5.14-6.66,10.09-12.55A76.23,76.23,0,0,1,155,121.49q-5.9,4.94-12.55,10.09A60.54,60.54,0,0,0,124.42,113.55Zm42.7-2.68a92.57,92.57,0,0,0-22-22c31.78-34.53,55.75-45,69.9-47.91C212.17,55.12,201.65,79.09,167.12,110.87Z"></path>`,
 }
+

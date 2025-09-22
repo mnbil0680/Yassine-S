@@ -9,7 +9,7 @@ import Hero from "@components/Hero.astro"
 import Icon from "@components/Icon.astro"
 import PreviewCard from "@components/PreviewCard.astro"
 import Skills from "@components/Skills.astro"
-import portrait from "@images/brendon-smith-portrait-2025-07-15-1920.jpg"
+import portrait from "@images/yassin.png"
 import { PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
 
 const projects = (await getCollection("projects"))
@@ -28,14 +28,13 @@ const works = (await getCollection("work"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hi, I'm Brendon."
-          tagline=`I build software for science.
-                   I'm based in Cambridge, MA.`
+          title="Hi, I'm Yassine."
+          tagline=`I'm a creative professional specializing in graphic design, photography, and videography`
           align="start"
         />
         <Picture
           src={portrait}
-          alt="Portrait of Brendon Smith smiling in a black t-shirt"
+          alt="Portrait of Yassine Soufa in a black suit"
           formats={PICTURE_FORMATS}
           decoding="async"
           loading="eager"
@@ -67,6 +66,8 @@ const works = (await getCollection("work"))
           </CallToAction>
         </div>
       </section>
+
+      
       <section class="section with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
           <h2>{WORK.TITLE}</h2>
