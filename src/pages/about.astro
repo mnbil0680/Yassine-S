@@ -4,22 +4,20 @@ import BaseLayout from "@layouts/BaseLayout.astro"
 import Contact from "@components/Contact.astro"
 import Hero from "@components/Hero.astro"
 import Icon from "@components/Icon.astro"
-import atWork from "@images/brendon-smith-at-work.jpg"
-import bladeRunnerEye from "@images/blade-runner-1982-eye.jpg"
-import coffeeGeorgeHowellModbar from "@images/coffee-george-howell-modbar.jpg"
-import coffeeNYCCounterCulture from "@images/brendon-smith-coffee-2017-10-14-nyc-counter-culture.jpg"
-import collegeLibrary from "@images/brendon-smith-college-library.jpg"
-import fitnessPullUps from "@images/brendon-smith-fitness-pull-ups-2019-03-09.jpg"
-import fitnessTrackMeet from "@images/brendon-smith-fitness-track-2002.jpg"
-import jurassicParkNedry from "@images/jurassic-park-1993-04353-nedry-thanks-dad.jpg"
-import jurassicParkNEDRYLAND from "@images/jurassic-park-1993-05419-nedryland.jpg"
-import gradSchoolLab from "@images/brendon-smith-grad-school-lab.jpg"
-import gradSchoolRegalia from "@images/brendon-smith-grad-school-doctoral-regalia.jpg"
-import massiveAttack20101015 from "@images/massive-attack-2010-10-15-chicago-riviera.jpg"
-import postdocLabBench from "@images/brendon-smith-postdoc-lab-bench.jpg"
-import postdocLabHands from "@images/brendon-smith-postdoc-lab-hands.jpg"
+import atWork from "@images/yassin.png"
+import ogImage from "/images/og.jpg"
+import favicon from "/images/favicon.svg"
+import udacityLogoDark from "/images/udacity-logo-dark-mode.svg"
+import udacityLogoLight from "/images/udacity-logo-light-mode.svg"
+import bgMainDark from "/images/backgrounds/bg-main-dark.svg"
+import bgMainLight from "/images/backgrounds/bg-main-light.svg"
+import noise from "/images/backgrounds/noise.png"
 import yassinPortrait from "@images/yassin.png"
 import tachfineWork from "@images/tachfine/1111.jpg"
+import olaWork from "@images/ola/KVcopy.jpg"
+import sidiTourWork from "@images/sidiTour/POSTSIDI.jpg"
+import rajaCampaign from "@images/raja/raja.jpg"
+import azawanDesign from "@images/azawan/AZAWAN.jpg"
 import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
 ---
 
@@ -33,11 +31,11 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
       <header>
         <Hero
           title={ABOUT.TITLE}
-          tagline="Thanks for stopping by. Here's more about me and my background."
+          tagline="Thanks for stopping by. Here's more about me and my creative journey."
         >
           <Picture
             src={atWork}
-            alt="Brendon Smith at desk at work"
+            alt="Yassine Soufa at work on creative projects"
             formats={PICTURE_FORMATS}
             class:list={["img-hero"]}
             decoding="async"
@@ -47,530 +45,213 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
       </header>
       <section>
         <hgroup>
-          <h2>Science</h2>
+          <h2>Creative Professional</h2>
           <p>
-            Science is my jam. Before I got into tech, I spent about ten years
-            doing science research.
+            I'm Yassine Soufa, a creative professional specializing in graphic design, photography, and 
+            videography. My work bridges visual communication and sports culture, with a strong focus 
+            on cycling, where I combine my passion as both a photographer and cyclist.
           </p>
         </hgroup>
         <div class="content">
-          <h3>College</h3>
-          <Picture
-            src={collegeLibrary}
-            alt="Brendon Smith in Wheaton College Library"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <p>
-            I got into science during college. I was in a dual-degree program
-            with majors in Spanish and Applied Health Science. Applied Health
-            Science was a great fit and I became a thriving member of the
-            department. Mentors helped me figure out who I was as a person and
-            how to leverage my strengths to create a career.
-          </p>
-          <p>
-            My favorite subject in my Applied Health Science major was
-            Nutrition. I was blessed with a great teacher who provided a
-            rigorous foundation in nutritional biochemistry and taught the
-            course materials with passion. I found it fascinating that all of
-            the biochemical and molecular details of our cells and physiology
-            could relate back to the foods we eat every day. My nutrition
-            teacher gave me extensive opportunities in research, teaching, and
-            administration that made me a competitive applicant for graduate
-            school.
-          </p>
-          <p>
-            I graduated from Wheaton with a B.S. in Applied Health Science, a
-            B.A. in Spanish, an understanding of my identity and values, and a
-            direction for my career.
-          </p>
-          <h3>Grad School</h3>
-          <Picture
-            src={gradSchoolLab}
-            alt=`Brendon Smith in the Bioacoustics Research Lab
-            at the University of Illinois at Urbana-Champaign`
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <Picture
-            src={gradSchoolRegalia}
-            alt="Brendon Smith in doctoral regalia after defending dissertation"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <p>
-            <Icon icon="arrow-bend-left-up" size="1.2em" verticalAlign="top" />
-            <em
-              >Me in the lab during my first year of grad school, and me after
-              defending my dissertation. The more science I did, the longer my
-              hair got. Correlation or causation?</em
-            >
-          </p>
-          <p>
-            I went directly from college into the Nutritional Sciences PhD
-            program at the University of Illinois at Urbana-Champaign. My
-            tuition and living expenses were fully funded by research grants and
-            fellowships.
-          </p>
-          <p>
-            My coursework opened my mind to the wonderful world of cells,
-            molecules, and biochemical reactions, and to the effects of food
-            from cell to community. I got rigorous research training, working in
-            both nutritional biochemistry and engineering labs, and leading
-            projects on a large interdisciplinary team.
-          </p>
-          <p>
-            I began to see the computing challenges involved in scientific
-            research. I wrote VBA macros to automate experimental data analysis
-            and learned the SAS and R computing languages for statistical
-            programming. I also designed some illustrations for my work, like
-            <a
-              href="https://drive.proton.me/urls/W3B20EX8CC#34y2FJanuNif"
-              rel="external"
-              target="_blank">this illustration</a
-            >
-            of an
-            <a
-              href="https://doi.org/10.4137/bmi.s6051"
-              rel="external"
-              target="_blank">assay method</a
-            >
-            I developed, and
-            <a
-              href="https://drive.proton.me/urls/M45TT5D2JG#dBziP3WayCis"
-              rel="external"
-              target="_blank">this illustration</a
-            >
-            describing a process called endothelial dysfunction I made for a fellowship
-            proposal.
-          </p>
-          <p>
-            I also did some teaching. I ranked in the top 10% of campus teachers
-            based on student feedback, and completed a teaching certification.
-          </p>
-          <p>
-            You can download my dissertation for free
-            <a
-              href="https://www.ideals.illinois.edu/items/73150"
-              rel="external"
-              target="_blank">here</a
-            >, and you can look up my publications on my
-            <a
-              href="https://orcid.org/0000-0001-6615-8677"
-              rel="external"
-              target="_blank">ORCID profile</a
-            >.
-          </p>
-          <h3>Postdoc</h3>
-          <Picture
-            src={postdocLabBench}
-            alt="Brendon Smith at postdoc lab bench at Harvard"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <Picture
-            src={postdocLabHands}
-            alt="Brendon Smith's hands at postdoc lab bench at Harvard"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <p>
-            After I finished my PhD, I moved to Boston for postdoctoral
-            research. During this time, I decided to learn software engineering
-            and start a career in tech. You can read more about it on the <a
-              href={`${WORK.HREF}/harvard`}>Harvard page</a
-            >.
-          </p>
-        </div>
-      </section>
-      <section>
-        <hgroup>
-          <h2>Tech</h2>
-          <p>
-            My experiences as a science researcher motivated me to get into the
-            tech industry. I'm all about making scientists productive.
-          </p>
-        </hgroup>
-        <div class="content">
-          <h3>Design Education</h3>
+          <h3>Professional Overview</h3>
           <Picture
             src={yassinPortrait}
-            alt="Yassine Soufa working on graphic design projects"
+            alt="Yassine Soufa working on creative projects"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
           <p>
-            After deciding to learn software engineering, I had to figure out <em
-              >how</em
-            >
-            to learn. I looked into code bootcamps and computer science grad school.
-            Some friends introduced me to the online learning platform Udacity, and
-            I decided to learn there. I chose web development because of its broad
-            applicability and large open source software community. Check out the
-            <a href={`${PROJECTS.HREF}/udacity`}>Udacity page</a> for more.
+            I collaborate with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
+            Cycling Team, capturing the speed, strategy, and spirit of cycling at major national and 
+            international events. Beyond sports, I design and produce visual campaigns, brand identities, 
+            and digital content that connect audiences with powerful stories.
           </p>
-          <h3>Projects</h3>
           <p>
-            I've built my own open source software projects and helped with many
-            other projects too. Check out the <a href={PROJECTS.HREF}
-              >projects page</a
-            > for more.
+            For me, creativity is about more than visuals — it's about impact. Whether I'm designing a 
+            graphic chart, shooting a race, or editing a video, I aim to create work that is bold, authentic, and 
+            memorable.
           </p>
-          <h3>Work</h3>
           <p>
-            I've worked as a Software Engineer and DevOps Engineer at a few
-            different companies. Check out the <a href={WORK.HREF}>work page</a>
-            for more.
+            My approach combines technical excellence with artistic vision, ensuring every project 
+            delivers both aesthetic appeal and strategic value. From concept development to final 
+            delivery, I maintain a focus on quality, creativity, and client satisfaction.
           </p>
         </div>
       </section>
       <section>
         <hgroup>
-          <h2>Life</h2>
-          <p>Here are some things I like to do when I'm not working.</p>
+          <h2>Core Skills</h2>
+          <p>
+            My expertise spans multiple creative disciplines, each contributing to comprehensive 
+            visual storytelling and brand communication.
+          </p>
         </hgroup>
         <div class="content">
-          <h3>Coffee</h3>
+          <h3>Photography</h3>
           <Picture
-            src={coffeeGeorgeHowellModbar}
-            alt="George Howell Coffee Godfrey Hotel Modbar pour-over system"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <Picture
-            src={coffeeNYCCounterCulture}
-            alt=`Brendon Smith and Kent Langston at the 2017 New York Coffee Festival
-              Counter Culture booth`
+            src={sidiTourWork}
+            alt="Professional photography work by Yassine Soufa"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
           <p>
-            I like to start my days with <a
-              href="https://en.wikipedia.org/wiki/Specialty_coffee"
-              rel="external"
-              target="_blank">specialty coffee</a
-            >. I frequently hang out at coffee shops around Boston and
-            Cambridge. Let me know if you'd like to join me.
+            Professional photography forms the foundation of compelling visual narratives. I specialize 
+            in sports photography, particularly cycling events, capturing dynamic action shots and 
+            authentic moments that convey the intensity and emotion of competitive athletics.
           </p>
-          <h3>Fitness</h3>
+          <p>
+            My photography work extends beyond sports to include commercial photography, portrait 
+            work, and lifestyle documentation. I utilize advanced lighting techniques, composition 
+            principles, and post-processing expertise to create images that serve both artistic and 
+            commercial purposes.
+          </p>
+          <p>
+            Technical proficiency with professional camera equipment, combined with an artistic eye 
+            for composition and timing, enables me to deliver consistent, high-quality results across 
+            diverse shooting scenarios and client requirements.
+          </p>
+          <h3>Videography</h3>
           <Picture
-            src={fitnessTrackMeet}
-            alt="Brendon Smith competing in a track meet in 2002"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <Picture
-            src={fitnessPullUps}
-            alt="Brendon Smith doing pull-ups"
+            src={olaWork}
+            alt="Video production and cinematography work by Yassine Soufa"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
           <p>
-            I got into fitness at the beginning of high school. I ran track, and
-            got into swimming and strength training. My fitness pursuits taught
-            me the value of consistency and focus, and helped me develop an
-            active lifestyle that I continue today.
-          </p>
-          <h3>Movies</h3>
-          <Picture
-            src={bladeRunnerEye}
-            alt="Close-up from Blade Runner (1982) of an eye with the 'Hades Landscape' reflected in the iris"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
-          <p>I like collecting and watching movies.</p>
-          <p>Here are some of my favorite genres:</p>
-          <ul>
-            <li>
-              Film Noir (<a
-                href="https://www.themoviedb.org/keyword/9807-film-noir/movie"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Film_noir"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Horror (<a
-                href="https://www.themoviedb.org/genre/27-horror/movie"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Horror_film"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Sci-Fi (<a
-                href="https://www.themoviedb.org/genre/878-science-fiction/movie"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Science_fiction_film"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-          </ul>
-          <p>Here are some of my favorite directors:</p>
-          <ul>
-            <li>
-              John Carpenter (<a
-                href="https://www.themoviedb.org/person/11770-john-carpenter"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/John_Carpenter"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Jules Dassin (<a
-                href="https://www.themoviedb.org/person/14227-jules-dassin"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Jules_Dassin"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Alfred Hitchcock (<a
-                href="https://www.themoviedb.org/person/2636-alfred-hitchcock"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Alfred_Hitchcock"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Krzysztof Kieślowski (<a
-                href="https://www.themoviedb.org/person/1126-krzysztof-kieslowski"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Krzysztof_Kie%C5%9Blowski"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Stanley Kubrick (<a
-                href="https://www.themoviedb.org/person/240-stanley-kubrick"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Stanley_Kubrick"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Akira Kurosawa (<a
-                href="https://www.themoviedb.org/person/5026"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Akira_Kurosawa"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Jean-Pierre Melville (<a
-                href="https://www.themoviedb.org/person/3831-jean-pierre-melville"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Jean-Pierre_Melville"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Hayao Miyazaki (<a
-                href="https://www.themoviedb.org/person/608"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Hayao_Miyazaki"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Ridley Scott (<a
-                href="https://www.themoviedb.org/person/578-ridley-scott"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Ridley%20Scott"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-            <li>
-              Steven Spielberg (<a
-                href="https://www.themoviedb.org/person/488-steven-spielberg"
-                rel="external"
-                target="_blank">TheMovieDB</a
-              >, <a
-                href="https://en.wikipedia.org/wiki/Steven_Spielberg"
-                rel="external"
-                target="_blank">Wikipedia</a
-              >)
-            </li>
-          </ul>
-          <p>
-            I usually prefer to watch movies at home, but sometimes hang out at
-            art theaters like the <a
-              href="https://coolidge.org/"
-              rel="external"
-              target="_blank">Coolidge Corner Theatre</a
-            >.
+            Videography allows me to capture stories in motion, creating dynamic content that engages 
+            audiences through compelling visual narratives. My work includes documentary-style coverage 
+            of cycling events, commercial video production, and brand storytelling content.
           </p>
           <p>
-            Fun fact - the username "br3ndonland" I have on platforms like
-            GitHub and LinkedIn is a reference to one of my favorite movies,
-            Jurassic Park (1993) (<a
-              href="https://www.themoviedb.org/movie/329-jurassic-park"
-              rel="external"
-              target="_blank">TheMovieDB</a
-            >, <a
-              href="https://en.wikipedia.org/wiki/Jurassic_Park_%28film%29"
-              rel="external"
-              target="_blank">Wikipedia</a
-            >). The computer programmer character, Dennis Nedry (Wayne Knight),
-            has an <a
-              href="https://en.wikipedia.org/wiki/Macintosh_Quadra_700"
-              rel="external"
-              target="_blank">Apple Macintosh Quadra 700 computer</a
-            > at his desk. Apple's convention (still in use today) was to put an
-            icon at the top right of the desktop representing the computer's hard
-            drive. A close look at Nedry's desktop reveals that his hard drive is
-            named <code>NEDRYLAND</code>. When I got my first Mac, I named my
-            hard drive <code>BRENDONLAND</code>. On socials, I had to use
-            "br3ndonland" because "brendonland" was taken (there are actually
-            people named Brendon Land).
+            I employ professional cinematography techniques including strategic camera movement, 
+            composition, and lighting control to create cinematic quality footage. This foundation 
+            enables effective storytelling whether documenting sports events or creating branded content.
           </p>
+          <p>
+            From handheld action sequences to stable establishing shots, I adapt my approach to match 
+            the content requirements while maintaining visual consistency and professional production values.
+          </p>
+          <h3>Montage & Video Editing</h3>
           <Picture
-            src={jurassicParkNedry}
-            alt="Image from Jurassic Park (1993) of Dennis Nedry (Wayne Knight) squeezing a stress ball and saying, 'Thanks, Dad.'"
+            src={rajaCampaign}
+            alt="Video editing and motion graphics work by Yassine Soufa"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
+          <p>
+            Post-production is where raw footage transforms into compelling stories. My video editing 
+            expertise includes advanced timeline editing, color grading, audio mixing, and motion 
+            graphics integration using industry-standard software like Adobe Premiere Pro and After Effects.
+          </p>
+          <p>
+            I specialize in creating dynamic montages that capture the energy and excitement of cycling 
+            competitions, as well as polished commercial content that effectively communicates brand 
+            messages. Strategic pacing, music selection, and visual effects enhance the emotional impact 
+            of every project.
+          </p>
+          <p>
+            My editing approach focuses on storytelling through rhythm, creating seamless narratives 
+            that maintain viewer engagement while delivering key messages effectively and memorably.
+          </p>
+          <h3>Graphic Design</h3>
           <Picture
-            src={jurassicParkNEDRYLAND}
-            alt="Image from Jurassic Park (1993) of Dennis Nedry's desktop showing that his hard drive is named NEDRYLAND"
+            src={azawanDesign}
+            alt="Graphic design and visual identity work by Yassine Soufa"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
-          <h3>Music</h3>
-          <Picture
-            src={massiveAttack20101015}
-            alt="Massive Attack at the Riviera Theatre, Chicago, 2010-10-15"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
+          <p>
+            Graphic design provides the visual foundation for brand communication across all media. 
+            I create comprehensive visual identities, marketing materials, and digital content that 
+            effectively communicate brand values while maintaining aesthetic excellence.
+          </p>
+          <p>
+            My design work encompasses logo development, brand guidelines, promotional materials, and 
+            digital graphics optimized for various platforms. I balance creative expression with 
+            strategic communication objectives to ensure designs serve both artistic and commercial purposes.
+          </p>
+          <p>
+            Using advanced design software and staying current with industry trends, I deliver visual 
+            solutions that stand out in competitive markets while maintaining timeless appeal and 
+            professional credibility.
+          </p>
+        </div>
+      </section>
+      <section>
+        <hgroup>
+          <h2>Professional Experience</h2>
+          <p>
+            My creative journey has led me to work with prestigious organizations and 
+            deliver impactful visual content across multiple industries.
+          </p>
+        </hgroup>
+        <div class="content">
+          <h3>Sports Collaboration</h3>
           <Picture
             src={tachfineWork}
-            alt="Tachfine Center design project by Yassine Soufa"
+            alt="Professional sports photography and design work by Yassine Soufa"
             formats={PICTURE_FORMATS}
             class:list={["img-thumbnail"]}
             decoding="async"
             loading="lazy"
           />
           <p>
-            I like listening to music and going to concerts. I also played
-            classical guitar for several years in high school and college.
+            My collaboration with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
+            Cycling Team represents the intersection of my professional skills and personal passion for cycling. 
+            This unique position allows me to combine insider knowledge of the sport with technical expertise 
+            to create authentic, compelling visual content.
           </p>
-          <p>Here are some of my favorite genres:</p>
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Baroque_music"
-                rel="external"
-                target="_blank">Baroque</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Classical_guitar"
-                rel="external"
-                target="_blank">Classical guitar</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Jazz_fusion"
-                rel="external"
-                target="_blank">Jazz fusion</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Progressive_rock"
-                rel="external"
-                target="_blank">Progressive rock</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Heavy_metal_music"
-                rel="external"
-                target="_blank">Metal</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Trip_hop"
-                rel="external"
-                target="_blank">Trip hop</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Deep_house"
-                rel="external"
-                target="_blank">Deep house</a
-              > (while I'm coding)
-            </li>
-          </ul>
+          <p>
+            Working at major national and international cycling events, I capture the intensity, strategy, 
+            and human drama that unfolds during competition. This requires not just technical proficiency, 
+            but also deep understanding of the sport to anticipate key moments and position myself for 
+            optimal shots.
+          </p>
+          <p>
+            Beyond event coverage, I develop comprehensive visual campaigns that promote cycling culture 
+            in Morocco, working to elevate the sport's profile through strategic visual communication 
+            and brand storytelling.
+          </p>
+          <h3>Creative Projects</h3>
+          <p>
+            I've worked on diverse creative projects ranging from small business branding to large-scale 
+            promotional campaigns. Each project presents unique challenges that require adaptive thinking 
+            and creative problem-solving while maintaining consistent quality standards.
+          </p>
+          <p>
+            My portfolio includes work across various industries including automotive, tourism, healthcare, 
+            and cultural organizations. This diversity has strengthened my ability to understand different 
+            market requirements and adapt my creative approach accordingly.
+          </p>
+          <p>
+            Check out my complete <a href={WORK.HREF}>work portfolio</a> to see examples of recent projects 
+            and case studies that demonstrate the impact of strategic visual communication.
+          </p>
+          <h3>Creative Projects Portfolio</h3>
+          <p>
+            My diverse project portfolio showcases versatility and expertise across multiple creative 
+            disciplines. Each project represents a unique collaboration and creative challenge, from 
+            brand identity development to comprehensive visual campaigns.
+          </p>
+          <p>
+            Recent work includes brand identity systems, sports event documentation, commercial photography, 
+            video production, and digital marketing campaigns. This range demonstrates my ability to adapt 
+            creative approaches while maintaining consistent quality and professional standards.
+          </p>
+          <p>
+            Visit the <a href={PROJECTS.HREF}>projects section</a> to explore detailed case studies 
+            and see how creative problem-solving translates into effective visual communication solutions.
+          </p>
         </div>
       </section>
     </main>

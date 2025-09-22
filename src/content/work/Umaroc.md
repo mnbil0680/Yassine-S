@@ -1,44 +1,169 @@
 ---
-title: Invicro
-dateStart: 2019-03-11
-dateEnd: 2019-12-13
+title: U Morocco
+dateStart: 2023-03-10
+dateEnd: 2023-04-30
 image:
-  src: "@images/brendon-smith-at-work-invicro.jpg"
-  alt: Brendon Smith outside Invicro office
+  src: "@images/umoroco/u.jpg"
+  alt: U Morocco Ramadan cultural brand identity design by Yassine Soufa
 roles:
-  - Software Engineer II
+  - Creative Director
+  - Photographer & Photo Editor
+  - Graphic Designer
+  - Visual Identity Designer
 tags:
-  - Docker
-  - Git
-  - GitLab
-  - Perl
-  - Shell
-  - Vue.js
-  - Web Development
+  - Photography
+  - Color Editing
+  - Graphic Design
+  - Visual Identity
+  - Cultural Design
+  - Islamic Design
+  - Ramadan Branding
+  - Moroccan Heritage
+  - Adobe Creative Suite
+  - Brand Development
+  - Cultural Marketing
+  - Religious Design
+  - Print Design
+  - Digital Design
 ---
 
-## Overview
+## Project Overview
 
-My first software engineering job was at <a href="https://invicro.com/" rel="external" target="_blank">Invicro</a>, a CRO (contract research organization) specializing in biomedical imaging. The scientific focus of the company was a motivating factor for me.
+I developed a comprehensive cultural brand identity for **U Morocco**, a premium brand celebrating Moroccan Islamic heritage and Ramadan traditions. This project showcased my expertise in photography, color editing, graphic design, and visual identity creation, delivering a culturally authentic brand presence that honors Islamic values while appealing to modern Moroccan consumers.
 
-In terms of coding, I did a little bit of DevOps by creating an automated application install pipeline with Docker Compose and shell scripts. This helped engineers get their development environments up and running quickly.
+U Morocco needed a visual identity that would respectfully represent Islamic traditions, particularly during the holy month of Ramadan, while creating a memorable brand presence that resonates with Moroccan families and communities. The challenge was creating designs that balanced religious sensitivity with contemporary marketing effectiveness.
 
-I didn't do much other back-end work there. The back-end was written in Perl (with the Perl Catalyst framework), which is effectively obsolete, and I realized it wasn't going to be worth my time to learn an obsolete programming language. In retrospect, I think that was a good call.
+## Creative Process & Methodology
 
-I did enjoy doing front-end web development work though. At the time, we were refactoring our front-end from a nightmarish mess of jQuery files into Vue.js components.
+### Photography & Cultural Documentation
 
-## Vue.js
+I conducted thoughtful photography sessions that captured the spiritual essence of Ramadan and Islamic culture in Morocco. The photography work focused on respectful representation of religious traditions while creating visually compelling brand content.
 
-<a href="https://vuejs.org/" rel="external" target="_blank">Vue.js</a> calls itself "the progressive JavaScript framework." It's not just a tagline - I found Vue.js to be progressive, both in terms of learning and in terms of business.
+**Key Photography Elements:**
 
-### _Learning is progressive_
+- **Islamic Architecture**: Documented traditional mosque architecture and Islamic geometric patterns
+- **Cultural Traditions**: Captured authentic Ramadan traditions, family gatherings, and community celebrations
+- **Religious Symbols**: Photographed crescents, lanterns, and other Islamic symbols with cultural respect
+- **Lifestyle Imagery**: Created authentic lifestyle photography showing modern Moroccan Islamic living
 
-The progressive nature of Vue.js matches the progressive nature of learning.
+### Advanced Color Editing & Cultural Harmony
 
-- Vue.js is generally an approachable JavaScript framework. Its "components," reusable parts of a webpage, are structured into three sections (HTML for the template structure, JavaScript for interactivity, and CSS for styling). These three sections represent <a href="https://developer.mozilla.org/en-US/docs/Learn" rel="external" target="_blank">the three code languages that a browser runs</a> (HTML, CSS, JavaScript). So the layout of a Vue.js component matches the functionality of a web browser. Very intuitive.
-- Learners can start small and simple and add complexity as they go. One example might be "<a href="https://en.wikipedia.org/wiki/Hydration_%28web_development%29" rel="external" target="_blank">hydration</a>" (adding interactivity to a webpage after it loads). With React (another competing JavaScript framework), terms like hydration are thrown around frequently without being clearly defined, making the learning process more difficult. With Vue.js, I didn't even need to be aware of the concept of hydration until much later when I was learning <a href="https://nuxt.com/" rel="external" target="_blank">Nuxt</a>.
+The color editing process was crucial in establishing U Morocco's distinctive visual style that honored Islamic design principles while creating contemporary appeal. I developed a color palette rooted in Islamic art traditions.
 
-### _Business development is progressive_
+**Color Editing Approach:**
 
-- When we learn about new technologies as coders, we frequently learn them with "greenfield" projects (new projects without many constraints). When working within a business however, changes are usually only made if they also make sense for the business. As we saw at Invicro, it's possible to gradually refactor a web application to Vue.js when the business calls for it. When we were replacing jQuery with Vue.js, we just had the Vue.js application added to a script tag in the `index.html`. We could replace one page or one feature at a time.
-- The progressive nature of Vue.js also helps businesses in terms of onboarding and training new software engineers. Engineers can start small and learn as they go, and the company doesn't have to develop its own training materials. I found <a href="https://www.vuemastery.com/" rel="external" target="_blank">Vue Mastery</a> to be particularly helpful for learning. If you'd like a taste, you can see some of my <a href="https://github.com/br3ndonland/vue-mastery-notes" rel="external" target="_blank">Vue Mastery notes on GitHub</a>.
+- **Islamic Color Palette**: Rich greens, gold accents, and warm earth tones reflecting Islamic art traditions
+- **Ramadan Atmosphere**: Enhanced warm lighting and spiritual ambiance in all visual materials
+- **Cultural Authenticity**: Applied color grading that respected religious sensitivities and cultural values
+- **Brand Consistency**: Established signature color treatments recognizable across all brand applications
+
+### Visual Identity Design
+
+The visual identity system needed to work across religious and commercial contexts while maintaining deep respect for Islamic culture. I created a comprehensive identity that honored Moroccan Islamic heritage.
+
+**Identity Components:**
+
+- **Logo Development**: Created a distinctive mark incorporating Islamic geometric patterns and Arabic calligraphy
+- **Typography System**: Selected fonts that complemented Arabic text and Islamic design principles
+- **Pattern Integration**: Incorporated traditional Islamic geometric patterns and cultural motifs
+- **Cultural Guidelines**: Developed usage standards ensuring respectful brand implementation
+
+### Graphic Design Applications
+
+The graphic design work encompassed various materials for Ramadan celebrations and Islamic cultural events, ensuring each design honored religious traditions while serving modern marketing needs.
+
+**Design Applications:**
+
+- **Ramadan Marketing**: Festive promotional materials for the holy month celebrations
+- **Cultural Events**: Design materials for Islamic holidays and community gatherings
+- **Digital Presence**: Social media templates respecting Islamic content guidelines
+- **Print Materials**: Traditional printed materials for mosques and community centers
+
+## Visual Portfolio Gallery
+
+| Design Category | Project | Description |
+|----------------|---------|-------------|
+| **Main Brand Identity** | ![U Morocco Brand](@images/umoroco/u.jpg) | **Primary Brand Identity** - The cornerstone of U Morocco's visual identity, featuring Islamic geometric patterns and Arabic calligraphy in traditional green and gold palette |
+| **Ramadan Campaign** | ![Design 1](@images/umoroco/1.jpg) | **Ramadan Celebration Design A** - Festive design celebrating the holy month with traditional Islamic motifs and community-focused messaging |
+| **Cultural Series** | ![Design 2](@images/umoroco/2.jpg) | **Cultural Heritage Design B** - Authentic Moroccan Islamic design elements showcasing traditional patterns and spiritual symbolism |
+| **Community Design** | ![Design 3](@images/umoroco/3.jpg) | **Community Engagement Design C** - Social design promoting Islamic values and community unity during religious celebrations |
+| **Festival Graphics** | ![Design 4](@images/umoroco/4.jpg) | **Festival Promotional Design D** - Event graphics for Islamic holidays and cultural celebrations with respectful religious imagery |
+| **Spiritual Branding** | ![Design 5](@images/umoroco/5.jpg) | **Spiritual Brand Design E** - Contemplative design emphasizing spiritual aspects of Islamic faith and Moroccan traditions |
+| **Traditional Art** | ![Design 6](@images/umoroco/6.jpg) | **Traditional Art Integration F** - Design incorporating traditional Moroccan Islamic art forms and architectural elements |
+| **Modern Islamic** | ![Design 7](@images/umoroco/7.jpg) | **Modern Islamic Design G** - Contemporary interpretation of Islamic design principles appealing to younger Moroccan audiences |
+| **Heritage Design** | ![Design 8](@images/umoroco/8.jpg) | **Cultural Heritage Design H** - Final design in the series celebrating Moroccan Islamic heritage and cultural continuity |
+
+## Photography & Color Editing Excellence
+
+### Culturally Sensitive Photography
+
+Photography for U Morocco required deep understanding of Islamic culture and religious sensitivity. I developed an approach that captured the beauty of Islamic traditions while respecting religious guidelines.
+
+**Islamic Photography Focus:**
+
+- **Architectural Documentation**: Captured the geometric beauty of Islamic architecture and mosque design
+- **Cultural Celebrations**: Documented Ramadan traditions, Eid celebrations, and community gatherings
+- **Symbolic Photography**: Created respectful imagery of Islamic symbols, crescents, and traditional lanterns
+- **Family Traditions**: Photographed authentic family moments during Islamic holidays and religious observances
+
+### Advanced Color Editing for Islamic Branding
+
+Color editing for Islamic branding required understanding the cultural significance of colors in Islamic art and ensuring all visual materials respected religious sensitivities.
+
+**Islamic Color Strategy:**
+
+- **Sacred Green Palette**: Utilized various shades of green, the color most associated with Islam and paradise
+- **Golden Accents**: Applied gold highlighting to emphasize important elements and create luxury appeal
+- **Warm Earth Tones**: Used natural colors reflecting the Moroccan landscape and traditional Islamic art
+- **Spiritual Lighting**: Enhanced lighting to create contemplative and peaceful atmospheres
+
+## Graphic Design & Visual Identity
+
+### Comprehensive Islamic Brand Identity
+
+U Morocco's visual identity needed to work effectively in religious contexts while maintaining commercial appeal and modern relevance for Moroccan Muslim consumers.
+
+**Islamic Brand Development:**
+
+- **Geometric Logo Design**: Created logos incorporating traditional Islamic geometric patterns
+- **Arabic Typography**: Selected and customized Arabic fonts that complemented Islamic design principles
+- **Cultural Color System**: Developed color palettes rooted in Islamic art and Moroccan traditions
+- **Religious Guidelines**: Established design standards ensuring all materials respected Islamic values
+
+### Ramadan & Islamic Holiday Marketing
+
+The Ramadan-focused designs emphasized spiritual reflection, community gathering, and cultural celebration while maintaining commercial effectiveness for the U Morocco brand.
+
+**Islamic Holiday Design Elements:**
+
+- **Ramadan Promotions**: Created festive yet respectful promotional materials for the holy month
+- **Eid Celebrations**: Designed joyful graphics for Eid al-Fitr and Eid al-Adha celebrations
+- **Community Materials**: Developed designs for mosque bulletins and community event promotion
+- **Digital Content**: Created social media content respecting Islamic guidelines for digital marketing
+
+### Cultural Heritage Integration
+
+The design work successfully integrated Moroccan Islamic heritage with contemporary branding needs, creating materials that honored tradition while appealing to modern consumers.
+
+**Heritage Design Applications:**
+
+- **Traditional Patterns**: Incorporated authentic Moroccan Islamic geometric patterns and calligraphy
+- **Cultural Symbols**: Used appropriate Islamic symbols and motifs with cultural sensitivity
+- **Religious Architecture**: Drew inspiration from Moroccan mosque architecture and Islamic art forms
+- **Community Values**: Reflected Islamic values of community, charity, and spiritual growth in all designs
+
+## Project Impact & Results
+
+The U Morocco brand identity successfully bridged traditional Islamic culture with contemporary marketing needs, creating a respectful yet effective brand presence.
+
+**Cultural Authenticity**: The brand identity was recognized and appreciated by Moroccan Islamic communities for its respectful representation of religious traditions.
+
+**Community Engagement**: The Ramadan and Islamic holiday materials significantly increased community participation in cultural events and celebrations.
+
+**Brand Trust**: The culturally sensitive approach built strong trust with Moroccan Muslim consumers and religious leaders.
+
+**Religious Respect**: The project demonstrated how modern branding can honor Islamic values while achieving commercial objectives.
+
+**Cultural Preservation**: The work contributed to preserving and promoting Moroccan Islamic art traditions in contemporary contexts.
+
+This project exemplified the importance of cultural sensitivity in design work, showing how photography, color editing, graphic design, and visual identity can work together to create authentic, respectful, and effective branding for cultural and religious communities.

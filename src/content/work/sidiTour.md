@@ -1,5 +1,5 @@
 ---
-title: SIDI Tour - Tourism Visual Identity
+title: SIDI Tour
 dateStart: 2023-11-06
 dateEnd: 2024-06-06
 image:

@@ -14,12 +14,12 @@ import { PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
 
 const projects = (await getCollection("projects"))
   .filter((project) => !project.data.draft)
-  .sort((a, b) => b.data.dateStart.valueOf() - a.data.dateStart.valueOf())
+  .sort((a, b) => a.data.dateStart.valueOf() - b.data.dateStart.valueOf())
   .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE)
 
 const works = (await getCollection("work"))
   .filter((work) => !work.data.draft)
-  .sort((a, b) => b.data.dateStart.valueOf() - a.data.dateStart.valueOf())
+  .sort((a, b) => a.data.dateStart.valueOf() - b.data.dateStart.valueOf())
   .slice(0, SITE.NUM_WORKS_ON_HOMEPAGE)
 ---
 

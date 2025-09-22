@@ -9,7 +9,7 @@ import { SITE, WORK } from "@consts"
 
 const works = (await getCollection("work"))
   .filter((project) => !project.data.draft)
-  .sort((a, b) => b.data.dateStart.valueOf() - a.data.dateStart.valueOf())
+  .sort((a, b) => a.data.dateStart.valueOf() - b.data.dateStart.valueOf())
 ---
 
 <BaseLayout title=`${SITE.TITLE}: ${WORK.TITLE}` description={WORK.DESCRIPTION}>
