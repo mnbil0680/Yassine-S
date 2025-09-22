@@ -103,5 +103,6 @@ export default defineConfig({
     smartypants: false,
   },
   prefetch: true,
-  site: "https://www.bws.bio",
+  site: "https://mnbil0680.github.io",
+  base: "/Yassine-Soufa",
 })
