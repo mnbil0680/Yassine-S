@@ -4,7 +4,8 @@ import BaseLayout from "@layouts/BaseLayout.astro"
 import Contact from "@components/Contact.astro"
 import Hero from "@components/Hero.astro"
 
-import yassinPortrait from "@images/yassin.png"
+// Temporarily commented out due to corrupted image file
+// import yassinPortrait from "@images/yassin.png"
 
 import tachfineWork from "@images/tachfine/1111.jpg"
 import olaWork from "@images/ola/KVcopy.jpg"
@@ -26,14 +27,10 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
           title={ABOUT.TITLE}
           tagline="Thanks for stopping by. Here's more about me and my creative journey."
         >
-          <Picture
-            src={yassinPortrait}
-            alt="Yassine Soufa at work on creative projects"
-            formats={PICTURE_FORMATS}
-            class:list={["img-hero"]}
-            decoding="async"
-            loading="eager"
-          />
+          <!-- Temporarily removed portrait due to image file issue -->
+          <div class="img-hero placeholder-img">
+            <p>Portrait image placeholder</p>
+          </div>
         </Hero>
       </header>
       <section>
@@ -47,14 +44,10 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
         </hgroup>
         <div class="content">
           <h3>Professional Overview</h3>
-          <Picture
-            src={yassinPortrait}
-            alt="Yassine Soufa working on creative projects"
-            formats={PICTURE_FORMATS}
-            class:list={["img-thumbnail"]}
-            decoding="async"
-            loading="lazy"
-          />
+          <!-- Temporarily removed portrait due to image file issue -->
+          <div class="img-thumbnail placeholder-img">
+            <p>Profile image placeholder</p>
+          </div>
           <p>
             I collaborate with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
             Cycling Team, capturing the speed, strategy, and spirit of cycling at major national and 
@@ -297,5 +290,27 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
     .content {
       grid-column: 2 / 4;
     }
+  }
+
+  .placeholder-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-200);
+    color: var(--gray-600);
+    border: 2px dashed var(--gray-400);
+    border-radius: 0.5rem;
+    min-height: 200px;
+    font-style: italic;
+  }
+
+  .placeholder-img.img-hero {
+    min-height: 300px;
+  }
+
+  .placeholder-img.img-thumbnail {
+    min-height: 150px;
+    width: 200px;
+    margin: 1rem 0;
   }
 </style>
