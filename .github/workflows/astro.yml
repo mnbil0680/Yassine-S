@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ] # Or "main" if that's your branch
+    branches: [ master ] # or main if that's your branch
   workflow_dispatch:
 
 permissions:
@@ -17,11 +17,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: pnpm
           cache-dependency-path: '**/pnpm-lock.yaml'
 
       - name: Install pnpm
