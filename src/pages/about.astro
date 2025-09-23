@@ -5,10 +5,9 @@ import Contact from "@components/Contact.astro"
 import Hero from "@components/Hero.astro"
 
 // Temporarily commented out due to corrupted image file
-// import yassinPortrait from "@images/yassin.png"
+import yassinPortrait from "@images/yassin.png"
 
-// Temporarily commented out due to corrupted image file
-// import tachfineWork from "@images/tachfine/1111.jpg"
+import tachfineWork from "@images/tachfine/1111.jpg"
 import olaWork from "@images/ola/KVcopy.jpg"
 import sidiTourWork from "@images/sidiTour/POSTSIDI.jpg"
 import rajaCampaign from "@images/raja/raja.jpg"
@@ -28,10 +27,15 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
           title={ABOUT.TITLE}
           tagline="Thanks for stopping by. Here's more about me and my creative journey."
         >
-          <!-- Temporarily removed portrait due to image file issue -->
-          <div class="img-hero placeholder-img">
-            <p>Portrait image placeholder</p>
-          </div>
+                    <Picture
+            src={yassinPortrait}
+            alt="Yassine Soufa at work on creative projects"
+            formats={PICTURE_FORMATS}
+            class:list={["img-hero"]}
+            decoding="async"
+            loading="eager"
+          />
+
         </Hero>
       </header>
       <section>
@@ -45,10 +49,15 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
         </hgroup>
         <div class="content">
           <h3>Professional Overview</h3>
-          <!-- Temporarily removed portrait due to image file issue -->
-          <div class="img-thumbnail placeholder-img">
-            <p>Profile image placeholder</p>
-          </div>
+                    <Picture
+            src={yassinPortrait}
+            alt="Yassine Soufa working on creative projects"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+
           <p>
             I collaborate with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
             Cycling Team, capturing the speed, strategy, and spirit of cycling at major national and 
@@ -184,10 +193,15 @@ import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
         </hgroup>
         <div class="content">
           <h3>Sports Collaboration</h3>
-          <!-- Temporarily removed sports image due to image file issue -->
-          <div class="img-thumbnail placeholder-img">
-            <p>Sports collaboration image placeholder</p>
-          </div>
+                    <Picture
+            src={tachfineWork}
+            alt="Professional sports photography and design work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+
           <p>
             My collaboration with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
             Cycling Team represents the intersection of my professional skills and personal passion for cycling. 
