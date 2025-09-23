@@ -11,6 +11,8 @@ import { rehype } from "rehype"
 import type { Options as RehypeAutolinkOptions } from "rehype-autolink-headings"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 
+import vercel from "@astrojs/vercel";
+
 interface AstroAutolinkOptions {
   paths: string[]
   rehypeAutolinkOptions?: Readonly<RehypeAutolinkOptions> | null | undefined
@@ -92,6 +94,7 @@ export default defineConfig({
     mdx(),
     sitemap(),
   ],
+
   markdown: {
     rehypePlugins: [
       rehypeHeadingIds,
@@ -102,7 +105,9 @@ export default defineConfig({
     },
     smartypants: false,
   },
+
   prefetch: true,
   site: "https://mnbil0680.github.io",
-  base: "/Yassine-Soufa"
+  base: "/Yassine-Soufa",
+  adapter: vercel()
 })
