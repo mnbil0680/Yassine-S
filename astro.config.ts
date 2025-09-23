@@ -29,8 +29,8 @@ const astroAutolinkHeadings = (
       }: {
         logger: AstroIntegrationLogger
       }) => {
-        const integrationLogger = logger.fork(`${integrationName}/build`)
-        paths.forEach(async (path) => {
+       const integrationLogger = logger.fork(`${integrationName}/build`)
+        for (const path of paths) {
           integrationLogger.info(`Processing ${path}`)
           const fileContents = await readFile(path, { encoding: "utf-8" })
           const processedFileContents = await rehype()
@@ -38,7 +38,7 @@ const astroAutolinkHeadings = (
             .use(rehypeAutolinkHeadings, rehypeAutolinkOptions)
             .process(fileContents)
           await writeFile(path, String(processedFileContents))
-        })
+        }
       },
     },
   }
@@ -104,5 +104,5 @@ export default defineConfig({
   },
   prefetch: true,
   site: "https://mnbil0680.github.io",
+  base: "/Yassine-Soufa",
 })
- 
