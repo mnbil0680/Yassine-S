@@ -24,24 +24,24 @@ export const SITE: Site = {
 export const HOME: Metadata = {
   TITLE: "Home",
   DESCRIPTION: SITE.DESCRIPTION,
-  HREF: "/",
+  HREF: "/Yassine-Soufa/",
 }
 
 export const ABOUT: Metadata = {
   DESCRIPTION: `About ${AUTHOR.NAME}`,
-  HREF: "/about",
+  HREF: "/Yassine-Soufa/about",
   TITLE: "About",
 }
 
 export const WORK: Metadata = {
   DESCRIPTION: `Jobs at which ${AUTHOR.NAME} has worked`,
-  HREF: "/work",
+  HREF: "/Yassine-Soufa/work",
   TITLE: "Work",
 }
 
 export const PROJECTS: Metadata = {
   DESCRIPTION: `${AUTHOR.NAME}'s graphic design projects`,
-  HREF: "/projects",
+  HREF: "/Yassine-Soufa/projects",
   TITLE: "Projects",
 }
 
