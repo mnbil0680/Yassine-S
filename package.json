@@ -5,6 +5,7 @@
   "type": "module",
   "version": "0.0.0",
   "scripts": {
+    "preinstall": "pnpm approve-builds sharp esbuild || true",
     "astro": "astro",
     "build": "astro build",
     "check": "prettier . --check && cspell --dot --gitignore **/*.astro **/*.md* && astro check",
@@ -60,5 +61,6 @@
     "prettier": "~3.6",
     "prettier-plugin-astro": "^0.14.1",
     "vitest": "^3.2.4"
-  }
+  },
+  "packageManager": "pnpm@10.12.1"
 }
