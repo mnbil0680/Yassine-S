@@ -104,5 +104,4 @@ export default defineConfig({
   },
   prefetch: true,
   site: "https://mnbil0680.github.io",
-  base: "/Yassine-Soufa",
 })
