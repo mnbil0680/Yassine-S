@@ -87,6 +87,13 @@ const astroSearch = (): AstroIntegration => {
   }
 }
 
+const isVercel = !!process.env.VERCEL
+const ghRoot = "https://mnbil0680.github.io"
+const base = isVercel ? "/" : "/Yassine-Soufa"
+const site = isVercel && process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : `${ghRoot}${base}`
+
 export default defineConfig({
   integrations: [
     astroAutolinkHeadings(astroAutolinkOptions),
@@ -107,8 +114,8 @@ export default defineConfig({
   },
 
   prefetch: true,
-  site: "https://mnbil0680.github.io",
-  base: "/Yassine-Soufa",
+  site,
+  base,
   output: 'static', // ✅ required for static builds
   adapter: vercel()
 })
