@@ -87,9 +87,13 @@ const astroSearch = (): AstroIntegration => {
   }
 }
 
+// Hosting-aware base/site
+// - Default to root base (`/`) so hosts like Vercel work out of the box
+// - Opt-in to GitHub Pages base path only when GITHUB_PAGES env is set
 const isVercel = !!process.env.VERCEL
+const isGitHubPages = !!process.env.GITHUB_PAGES
 const ghRoot = "https://mnbil0680.github.io"
-const base = isVercel ? "/" : "/Yassine-Soufa"
+const base = isGitHubPages ? "/Yassine-Soufa" : "/"
 const site = isVercel && process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : `${ghRoot}${base}`

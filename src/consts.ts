@@ -21,27 +21,30 @@ export const SITE: Site = {
   NUM_WORKS_ON_HOMEPAGE: 2,
 }
 
+// Make links respect the configured base ("/" on Vercel, "/Yassine-Soufa/" on GitHub Pages)
+const BASE = (import.meta.env.BASE_URL || "/") as string
+
 export const HOME: Metadata = {
   TITLE: "Home",
   DESCRIPTION: SITE.DESCRIPTION,
-  HREF: "/Yassine-Soufa/",
+  HREF: BASE,
 }
 
 export const ABOUT: Metadata = {
   DESCRIPTION: `About ${AUTHOR.NAME}`,
-  HREF: "/Yassine-Soufa/about",
+  HREF: `${BASE}about`,
   TITLE: "About",
 }
 
 export const WORK: Metadata = {
   DESCRIPTION: `Jobs at which ${AUTHOR.NAME} has worked`,
-  HREF: "/Yassine-Soufa/work",
+  HREF: `${BASE}work`,
   TITLE: "Work",
 }
 
 export const PROJECTS: Metadata = {
   DESCRIPTION: `${AUTHOR.NAME}'s graphic design projects`,
-  HREF: "/Yassine-Soufa/projects",
+  HREF: `${BASE}projects`,
   TITLE: "Projects",
 }
 
