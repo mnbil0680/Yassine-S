@@ -1,0 +1,43 @@
+name: Deploy Astro to Vercel
+
+on:
+  push:
+    branches:
+      - master # deploy only when pushing to master
+  workflow_dispatch: # allow manual deploys from Actions tab
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to Vercel
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js with caching for pnpm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      # 3. Enable Corepack & install pnpm
+      - name: Enable Corepack & Install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      # 4. Install dependencies
+      - name: Install dependencies
+        run: pnpm install
+
+      # 5. Build Astro project
+      - name: Build Astro project
+        run: pnpm run build
+
+      # 6. Deploy to Vercel
+      - name: Deploy to Vercel
+        run: |
+          npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
