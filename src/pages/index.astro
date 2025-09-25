@@ -6,7 +6,6 @@ import CallToAction from "@components/CallToAction.astro"
 import Contact from "@components/Contact.astro"
 import Grid from "@components/Grid.astro"
 import Hero from "@components/Hero.astro"
-import Icon from "@components/Icon.astro"
 import PreviewCard from "@components/PreviewCard.astro"
 import Skills from "@components/Skills.astro"
 import portrait from "@images/yassin.png"
@@ -38,6 +37,7 @@ const works = (await getCollection("work"))
           formats={PICTURE_FORMATS}
           decoding="async"
           loading="eager"
+          class="portrait"
         />
       </header>
       <Skills />
@@ -61,8 +61,7 @@ const works = (await getCollection("work"))
         </div>
         <div class="cta">
           <CallToAction href={PROJECTS.HREF}>
-            View All
-            <Icon icon="arrow-right" size="1.2em" />
+            View All →
           </CallToAction>
         </div>
       </section>
@@ -85,8 +84,7 @@ const works = (await getCollection("work"))
         </div>
         <div class="cta">
           <CallToAction href={WORK.HREF}>
-            View All
-            <Icon icon="arrow-right" size="1.2em" />
+            View All →
           </CallToAction>
         </div>
       </section>
@@ -107,11 +105,21 @@ const works = (await getCollection("work"))
   }
 
   .hero img {
-    aspect-ratio: 5 / 4;
+    /* Use a consistent portrait aspect ratio on small screens */
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
     border-radius: 1.5rem;
     box-shadow: var(--shadow-md);
+  }
+
+  /* Constrain portrait size so it doesn't hug the viewport edges */
+  .hero picture.portrait {
+    max-width: clamp(12rem, 60vw, 20rem);
+    width: 100%;
+    justify-self: center;
   }
 
   @media (min-width: 50em) {
@@ -126,6 +134,11 @@ const works = (await getCollection("work"))
       aspect-ratio: 3 / 4;
       border-radius: 4.5rem;
       object-fit: cover;
+    }
+
+    .hero picture.portrait {
+      max-width: 18rem; /* smaller on large screens for comfortable spacing */
+      justify-self: end;
     }
   }
   /* ===================================================================== */
