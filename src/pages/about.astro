@@ -1,0 +1,327 @@
+---
+import { Picture } from "astro:assets"
+import BaseLayout from "@layouts/BaseLayout.astro"
+import Contact from "@components/Contact.astro"
+import Hero from "@components/Hero.astro"
+
+// Temporarily commented out due to corrupted image file
+import yassinPortrait from "@images/yassin.png"
+
+import tachfineWork from "@images/tachfine/1111.jpg"
+import olaWork from "@images/ola/KVcopy.jpg"
+import sidiTourWork from "@images/sidiTour/POSTSIDI.jpg"
+import rajaCampaign from "@images/raja/raja.jpg"
+import azawanDesign from "@images/azawan/AZAWAN.jpg"
+import { ABOUT, PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
+---
+
+<!-- TODO: convert this page to Markdown or MDX -->
+<BaseLayout
+  title=`${SITE.TITLE}: ${ABOUT.TITLE}`
+  description={ABOUT.DESCRIPTION}
+>
+  <div class="stack gap-10 lg:gap-20">
+    <main class="wrapper about">
+      <header>
+        <Hero
+          title={ABOUT.TITLE}
+          tagline="Thanks for stopping by. Here's more about me and my creative journey."
+        >
+                    <Picture
+            src={yassinPortrait}
+            alt="Yassine Soufa at work on creative projects"
+            formats={PICTURE_FORMATS}
+            class:list={["img-hero"]}
+            decoding="async"
+            loading="eager"
+          />
+
+        </Hero>
+      </header>
+      <section>
+        <hgroup>
+          <h2>Creative Professional</h2>
+          <p>
+            I'm Yassine Soufa, a creative professional specializing in graphic design, photography, and 
+            videography. My work bridges visual communication and sports culture, with a strong focus 
+            on cycling, where I combine my passion as both a photographer and cyclist.
+          </p>
+        </hgroup>
+        <div class="content">
+          <h3>Professional Overview</h3>
+                    <Picture
+            src={yassinPortrait}
+            alt="Yassine Soufa working on creative projects"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+
+          <p>
+            I collaborate with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
+            Cycling Team, capturing the speed, strategy, and spirit of cycling at major national and 
+            international events. Beyond sports, I design and produce visual campaigns, brand identities, 
+            and digital content that connect audiences with powerful stories.
+          </p>
+          <p>
+            For me, creativity is about more than visuals — it's about impact. Whether I'm designing a 
+            graphic chart, shooting a race, or editing a video, I aim to create work that is bold, authentic, and 
+            memorable.
+          </p>
+          <p>
+            My approach combines technical excellence with artistic vision, ensuring every project 
+            delivers both aesthetic appeal and strategic value. From concept development to final 
+            delivery, I maintain a focus on quality, creativity, and client satisfaction.
+          </p>
+        </div>
+      </section>
+      <section>
+        <hgroup>
+          <h2>Core Skills</h2>
+          <p>
+            My expertise spans multiple creative disciplines, each contributing to comprehensive 
+            visual storytelling and brand communication.
+          </p>
+        </hgroup>
+        <div class="content">
+          <h3>Photography</h3>
+          <Picture
+            src={sidiTourWork}
+            alt="Professional photography work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+          <p>
+            Professional photography forms the foundation of compelling visual narratives. I specialize 
+            in sports photography, particularly cycling events, capturing dynamic action shots and 
+            authentic moments that convey the intensity and emotion of competitive athletics.
+          </p>
+          <p>
+            My photography work extends beyond sports to include commercial photography, portrait 
+            work, and lifestyle documentation. I utilize advanced lighting techniques, composition 
+            principles, and post-processing expertise to create images that serve both artistic and 
+            commercial purposes.
+          </p>
+          <p>
+            Technical proficiency with professional camera equipment, combined with an artistic eye 
+            for composition and timing, enables me to deliver consistent, high-quality results across 
+            diverse shooting scenarios and client requirements.
+          </p>
+          <h3>Videography</h3>
+          <Picture
+            src={olaWork}
+            alt="Video production and cinematography work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+          <p>
+            Videography allows me to capture stories in motion, creating dynamic content that engages 
+            audiences through compelling visual narratives. My work includes documentary-style coverage 
+            of cycling events, commercial video production, and brand storytelling content.
+          </p>
+          <p>
+            I employ professional cinematography techniques including strategic camera movement, 
+            composition, and lighting control to create cinematic quality footage. This foundation 
+            enables effective storytelling whether documenting sports events or creating branded content.
+          </p>
+          <p>
+            From handheld action sequences to stable establishing shots, I adapt my approach to match 
+            the content requirements while maintaining visual consistency and professional production values.
+          </p>
+          <h3>Montage & Video Editing</h3>
+          <Picture
+            src={rajaCampaign}
+            alt="Video editing and motion graphics work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+          <p>
+            Post-production is where raw footage transforms into compelling stories. My video editing 
+            expertise includes advanced timeline editing, color grading, audio mixing, and motion 
+            graphics integration using industry-standard software like Adobe Premiere Pro and After Effects.
+          </p>
+          <p>
+            I specialize in creating dynamic montages that capture the energy and excitement of cycling 
+            competitions, as well as polished commercial content that effectively communicates brand 
+            messages. Strategic pacing, music selection, and visual effects enhance the emotional impact 
+            of every project.
+          </p>
+          <p>
+            My editing approach focuses on storytelling through rhythm, creating seamless narratives 
+            that maintain viewer engagement while delivering key messages effectively and memorably.
+          </p>
+          <h3>Graphic Design</h3>
+          <Picture
+            src={azawanDesign}
+            alt="Graphic design and visual identity work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+          <p>
+            Graphic design provides the visual foundation for brand communication across all media. 
+            I create comprehensive visual identities, marketing materials, and digital content that 
+            effectively communicate brand values while maintaining aesthetic excellence.
+          </p>
+          <p>
+            My design work encompasses logo development, brand guidelines, promotional materials, and 
+            digital graphics optimized for various platforms. I balance creative expression with 
+            strategic communication objectives to ensure designs serve both artistic and commercial purposes.
+          </p>
+          <p>
+            Using advanced design software and staying current with industry trends, I deliver visual 
+            solutions that stand out in competitive markets while maintaining timeless appeal and 
+            professional credibility.
+          </p>
+        </div>
+      </section>
+      <section>
+        <hgroup>
+          <h2>Professional Experience</h2>
+          <p>
+            My creative journey has led me to work with prestigious organizations and 
+            deliver impactful visual content across multiple industries.
+          </p>
+        </hgroup>
+        <div class="content">
+          <h3>Sports Collaboration</h3>
+                    <Picture
+            src={tachfineWork}
+            alt="Professional sports photography and design work by Yassine Soufa"
+            formats={PICTURE_FORMATS}
+            class:list={["img-thumbnail"]}
+            decoding="async"
+            loading="lazy"
+          />
+
+          <p>
+            My collaboration with the Royal Moroccan Cycling Federation and the Sidi Ali Unlock Pro 
+            Cycling Team represents the intersection of my professional skills and personal passion for cycling. 
+            This unique position allows me to combine insider knowledge of the sport with technical expertise 
+            to create authentic, compelling visual content.
+          </p>
+          <p>
+            Working at major national and international cycling events, I capture the intensity, strategy, 
+            and human drama that unfolds during competition. This requires not just technical proficiency, 
+            but also deep understanding of the sport to anticipate key moments and position myself for 
+            optimal shots.
+          </p>
+          <p>
+            Beyond event coverage, I develop comprehensive visual campaigns that promote cycling culture 
+            in Morocco, working to elevate the sport's profile through strategic visual communication 
+            and brand storytelling.
+          </p>
+          <h3>Creative Projects</h3>
+          <p>
+            I've worked on diverse creative projects ranging from small business branding to large-scale 
+            promotional campaigns. Each project presents unique challenges that require adaptive thinking 
+            and creative problem-solving while maintaining consistent quality standards.
+          </p>
+          <p>
+            My portfolio includes work across various industries including automotive, tourism, healthcare, 
+            and cultural organizations. This diversity has strengthened my ability to understand different 
+            market requirements and adapt my creative approach accordingly.
+          </p>
+          <p>
+            Check out my complete <a href={WORK.HREF}>work portfolio</a> to see examples of recent projects 
+            and case studies that demonstrate the impact of strategic visual communication.
+          </p>
+          <h3>Creative Projects Portfolio</h3>
+          <p>
+            My diverse project portfolio showcases versatility and expertise across multiple creative 
+            disciplines. Each project represents a unique collaboration and creative challenge, from 
+            brand identity development to comprehensive visual campaigns.
+          </p>
+          <p>
+            Recent work includes brand identity systems, sports event documentation, commercial photography, 
+            video production, and digital marketing campaigns. This range demonstrates my ability to adapt 
+            creative approaches while maintaining consistent quality and professional standards.
+          </p>
+          <p>
+            Visit the <a href={PROJECTS.HREF}>projects section</a> to explore detailed case studies 
+            and see how creative problem-solving translates into effective visual communication solutions.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <Contact />
+  </div>
+</BaseLayout>
+
+<style>
+  aside,
+  p {
+    margin-top: 1rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .content :global(a) {
+    text-decoration: solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+      gap: 3.5rem;
+    }
+
+    hgroup {
+      grid-column-start: 1;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    .content {
+      grid-column: 2 / 4;
+    }
+  }
+
+  .placeholder-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-200);
+    color: var(--gray-600);
+    border: 2px dashed var(--gray-400);
+    border-radius: 0.5rem;
+    min-height: 200px;
+    font-style: italic;
+  }
+
+  .placeholder-img.img-hero {
+    min-height: 300px;
+  }
+
+  .placeholder-img.img-thumbnail {
+    min-height: 150px;
+    width: 200px;
+    margin: 1rem 0;
+  }
+</style>

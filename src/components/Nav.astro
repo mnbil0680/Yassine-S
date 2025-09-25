@@ -1,0 +1,335 @@
+---
+import type { NavLink, Social } from "@types"
+import Icon from "./Icon.astro"
+import MenuButton from "./MenuButton.astro"
+import Search from "./Search.astro"
+import ThemeToggle from "./ThemeToggle.astro"
+import { SITE, SOCIALS, NAV_LINKS } from "@consts"
+
+const socialsInNav: Social[] = SOCIALS.filter(
+  (social: Social) => social.TITLE !== "CV",
+)
+---
+
+<nav>
+  <div class="menu-header">
+    <a href="/" class="site-title">
+      <Icon
+        icon="pen"
+        color="var(--accent-regular)"
+        size="1.6em"
+        gradient
+      />
+      {SITE.TITLE}
+    </a>
+    <div class="menu-controls">
+      <Search />
+      <MenuButton />
+    </div>
+  </div>
+  <div id="menu-content" hidden>
+    <ul class="nav-items">
+      {
+        NAV_LINKS.map((navLink: NavLink) => (
+          <li>
+            <a
+              aria-current={Astro.url.pathname === navLink.HREF}
+              class:list={[
+                "link",
+                {
+                  active:
+                    Astro.url.pathname === navLink.HREF ||
+                    (navLink.HREF !== "/" &&
+                      Astro.url.pathname.startsWith(navLink.HREF)),
+                },
+              ]}
+              data-astro-prefetch="viewport"
+              href={
+                navLink.HREF !== "/" &&
+                Astro.site?.hostname.includes("github.io")
+                  ? `${navLink.HREF}/`
+                  : navLink.HREF
+              }
+            >
+              {navLink.TITLE}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="menu-footer">
+      <div class="socials">
+        {
+          socialsInNav.map((social: Social) => (
+            <a href={social.HREF} class="social" rel="external" target="_blank">
+              <span class="sr-only">{social.TITLE}</span>
+              <Icon icon={social.ICON} />
+            </a>
+          ))
+        }
+      </div>
+      <div class="theme-toggle">
+        <ThemeToggle />
+      </div>
+    </div>
+  </div>
+  <noscript>
+    <ul class="nav-items">
+      {
+        NAV_LINKS.map((navLink: NavLink) => (
+          <li>
+            <a
+              aria-current={Astro.url.pathname === navLink.HREF}
+              class:list={[
+                "link",
+                {
+                  active:
+                    Astro.url.pathname === navLink.HREF ||
+                    (navLink.HREF !== "/" &&
+                      Astro.url.pathname.startsWith(navLink.HREF)),
+                },
+              ]}
+              data-astro-prefetch="viewport"
+              href={
+                navLink.HREF !== "/" &&
+                Astro.site?.hostname.includes("github.io")
+                  ? `${navLink.HREF}/`
+                  : navLink.HREF
+              }
+            >
+              {navLink.TITLE}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </noscript>
+  <noscript>
+    <div class="menu-footer">
+      <div class="socials">
+        {
+          socialsInNav.map((social: Social) => (
+            <a href={social.HREF} class="social" rel="external" target="_blank">
+              <span class="sr-only">{social.TITLE}</span>
+              <Icon icon={social.ICON} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </noscript>
+</nav>
+
+<script>
+  /*
+    Add class to overlay menu on top of page when menu is expanded
+
+    The CSS class positions the menu on top of the rest of the page when the
+    menu is expanded on small viewports. Otherwise, the menu pushes the rest
+    of the page downward when expanded on small viewports. The CSS class is
+    added with JavaScript because different behavior is needed if JavaScript
+    is disabled. If JavaScript is disabled, the menu should be permanently
+    expanded and should not cover any other content on the page.
+  */
+  const menu = document.getElementById("menu-content")!
+  menu.classList.add("menu-content")
+</script>
+
+<style>
+  nav {
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 3.5rem;
+    font-family: var(--font-brand);
+    font-weight: 500;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .site-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--gray-0);
+    text-decoration: none;
+  }
+
+  .menu-controls {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .menu-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 2rem;
+    font-size: var(--text-md);
+    list-style: none;
+    background-color: var(--gray-999);
+    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .link {
+    display: inline-block;
+    color: var(--gray-300);
+    text-decoration: none;
+  }
+
+  .link.active {
+    color: var(--gray-0);
+  }
+
+  .menu-footer {
+    --icon-gap: 0.5rem;
+    --icon-padding: 0.5rem;
+    --icon-size: var(--text-xl);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--icon-gap);
+    padding: calc(3 * var(--icon-padding));
+    background-color: var(--gray-999);
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--icon-gap);
+    font-size: var(--icon-size);
+  }
+
+  .social {
+    display: flex;
+    padding: var(--icon-padding);
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    height: calc(var(--icon-size) + 2 * var(--icon-padding));
+  }
+
+  @media (min-width: 25em) {
+    .site-title {
+      font-size: var(--text-xl);
+    }
+  }
+
+  @media (min-width: 50em) {
+    nav {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+
+    .menu-header {
+      padding: 0;
+    }
+
+    .menu-controls {
+      flex: 1;
+      justify-content: flex-end;
+      justify-self: stretch;
+    }
+
+    .menu-content {
+      display: contents;
+    }
+
+    .nav-items {
+      position: relative;
+      flex-direction: row;
+      max-width: fit-content;
+      padding: 0.5rem 0.5625rem;
+      font-size: var(--text-sm);
+      border-radius: 999rem;
+      border: 0;
+      background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-items::before {
+      position: absolute;
+      inset: -1px;
+      z-index: -1;
+      background: var(--gradient-stroke);
+      border-radius: 999rem;
+      content: "";
+    }
+
+    .link {
+      padding: 0.5rem 1rem;
+      border-radius: 999rem;
+      transition:
+        color var(--theme-transition),
+        background-color var(--theme-transition);
+    }
+
+    .link:hover,
+    .link:focus {
+      color: var(--gray-100);
+      background-color: var(--accent-subtle-overlay);
+    }
+
+    .link.active {
+      color: var(--accent-text-over);
+      background-color: var(--accent-regular);
+    }
+
+    .menu-footer {
+      --icon-padding: 0.2rem;
+
+      align-items: center;
+      justify-self: flex-end;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+
+  @media (min-width: 60em) {
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (min-width: 75em) {
+    .site-title {
+      font-size: var(--text-2xl);
+    }
+  }
+
+  @media (forced-colors: active) {
+    .link.active {
+      color: SelectedItem;
+    }
+  }
+</style>

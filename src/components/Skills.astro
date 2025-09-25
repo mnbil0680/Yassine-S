@@ -1,0 +1,73 @@
+---
+import Icon from "./Icon.astro"
+---
+
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4">
+    <Icon icon="camera" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>Photographer</h2>
+    <p>
+      Capturing the speed, strategy, and spirit of cycling at national and international events.
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon
+      icon="brush"
+      color="var(--accent-regular)"
+      size="2.5rem"
+      gradient
+    />
+    <h2>Graphic Designer</h2>
+    <p>
+      Designing bold, authentic visual identities and campaigns that connect audiences with powerful stories.
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4">
+    <Icon icon="video" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>Videographer</h2>
+    <p>
+      Producing compelling videos that merge creativity and sports culture, bringing moments to life.
+    </p>
+  </div>
+</section>
+
+<style>
+  .box {
+    border: 1px solid var(--gray-800);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .skills h2 {
+    font-size: var(--text-xl);
+  }
+
+  .skills p {
+    color: var(--gray-400);
+  }
+
+  @media (min-width: 50em) {
+    .box {
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+    }
+
+    .skills h2 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>

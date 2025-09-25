@@ -1,0 +1,197 @@
+---
+import Picture from "astro/components/Picture.astro"
+import { getCollection } from "astro:content"
+import BaseLayout from "@layouts/BaseLayout.astro"
+import CallToAction from "@components/CallToAction.astro"
+import Contact from "@components/Contact.astro"
+import Grid from "@components/Grid.astro"
+import Hero from "@components/Hero.astro"
+import PreviewCard from "@components/PreviewCard.astro"
+import Skills from "@components/Skills.astro"
+import portrait from "@images/yassin.png"
+import { PICTURE_FORMATS, PROJECTS, SITE, WORK } from "@consts"
+
+const projects = (await getCollection("projects"))
+  .filter((project) => !project.data.draft)
+  .sort((a, b) => a.data.dateStart.valueOf() - b.data.dateStart.valueOf())
+  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE)
+
+const works = (await getCollection("work"))
+  .filter((work) => !work.data.draft)
+  .sort((a, b) => a.data.dateStart.valueOf() - b.data.dateStart.valueOf())
+  .slice(0, SITE.NUM_WORKS_ON_HOMEPAGE)
+---
+
+<BaseLayout title={SITE.TITLE} description={SITE.DESCRIPTION}>
+  <div class="stack gap-10 lg:gap-20">
+    <div class="wrapper stack gap-8 lg:gap-20">
+      <header class="hero">
+        <Hero
+          title="Hi, I'm Yassine."
+          tagline=`I'm a creative professional specializing in graphic design, photography, and videography`
+          align="start"
+        />
+        <Picture
+          src={portrait}
+          alt="Portrait of Yassine Soufa in a black suit"
+          formats={PICTURE_FORMATS}
+          decoding="async"
+          loading="eager"
+          class="portrait"
+        />
+      </header>
+      <Skills />
+    </div>
+
+    <main class="wrapper stack gap-20 lg:gap-48">
+      <section class="section with-cta">
+        <header class="section-header stack gap-2 lg:gap-4">
+          <h2>{PROJECTS.TITLE}</h2>
+        </header>
+        <div class="gallery">
+          <Grid>
+            {
+              projects.map((project) => (
+                <li>
+                  <PreviewCard entry={project} />
+                </li>
+              ))
+            }
+          </Grid>
+        </div>
+        <div class="cta">
+          <CallToAction href={PROJECTS.HREF}>
+            View All →
+          </CallToAction>
+        </div>
+      </section>
+
+      
+      <section class="section with-cta">
+        <header class="section-header stack gap-2 lg:gap-4">
+          <h2>{WORK.TITLE}</h2>
+        </header>
+        <div class="gallery">
+          <Grid>
+            {
+              works.map((work) => (
+                <li>
+                  <PreviewCard entry={work} />
+                </li>
+              ))
+            }
+          </Grid>
+        </div>
+        <div class="cta">
+          <CallToAction href={WORK.HREF}>
+            View All →
+          </CallToAction>
+        </div>
+      </section>
+    </main>
+
+    <Contact />
+  </div>
+</BaseLayout>
+
+<style>
+  /* TODO: hero styles could be encapsulated in the Hero.astro component   */
+  /* ===================================================================== */
+  .hero {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero img {
+    /* Use a consistent portrait aspect ratio on small screens */
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Constrain portrait size so it doesn't hug the viewport edges */
+  .hero picture.portrait {
+    max-width: clamp(12rem, 60vw, 20rem);
+    width: 100%;
+    justify-self: center;
+  }
+
+  @media (min-width: 50em) {
+    .hero {
+      display: grid;
+      grid-template-columns: 6fr 4fr;
+      padding-inline: 2.5rem;
+      gap: 3.75rem;
+    }
+
+    .hero img {
+      aspect-ratio: 3 / 4;
+      border-radius: 4.5rem;
+      object-fit: cover;
+    }
+
+    .hero picture.portrait {
+      max-width: 18rem; /* smaller on large screens for comfortable spacing */
+      justify-self: end;
+    }
+  }
+  /* ===================================================================== */
+
+  .section {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .section-header {
+    justify-self: center;
+    text-align: center;
+    max-width: 50ch;
+    font-size: var(--text-md);
+    color: var(--gray-300);
+  }
+
+  .section-header h2 {
+    font-size: var(--text-xl);
+  }
+
+  .cta {
+    justify-self: center;
+  }
+
+  @media (min-width: 50em) {
+    .section {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "header header header header" "gallery gallery gallery gallery";
+      gap: 5rem;
+    }
+
+    .section.with-cta {
+      grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
+    }
+
+    .section-header {
+      grid-area: header;
+      font-size: var(--text-lg);
+      justify-self: left;
+      text-align: left;
+    }
+
+    .section-header h2 {
+      font-size: var(--text-2xl);
+    }
+
+    .gallery {
+      grid-area: gallery;
+    }
+
+    .cta {
+      grid-area: cta;
+    }
+  }
+</style>
