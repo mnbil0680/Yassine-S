@@ -27,9 +27,7 @@ tags:
 
 ## Project Overview
 
-I developed a comprehensive visual identity for **SIDI Tour**, a premium tourism company specializing in authentic Moroccan cultural experiences. This project showcased my expertise in photography, color editing, graphic design, and visual identity creation, delivering a cohesive brand presence that captures the essence of Moroccan hospitality and cultural richness.
-
-SIDI Tour needed a visual identity that would differentiate them in the competitive tourism market while authentically representing Moroccan heritage and modern travel expectations. The challenge was creating a brand that appealed to international travelers while maintaining cultural authenticity and local relevance.
+The Sidi Ali Tour is a vibrant and high-energy cycling race held in the seaside district of Aïn Diab, Casablanca, and sponsored by the Moroccan water-brand Sidi Ali. The event assembles professional, semi-professional, and passionate amateur cyclists, transforming the streets of Casablanca into a competitive racecourse. Riders navigate a route that combines coastal roads, urban turns, and moments of high speed, all against the backdrop of the Atlantic surf and city skyline. The Tour is more than a race — it’s a spectacle of athleticism, community, and brand engagement: grandstands gather spectators lining the route, media and sponsors amplify the excitement, and the course becomes a stage for the country’s rising and established talents to compete. Each edition of the Sidi Ali Tour aims to shine a light on cycling culture in Morocco, promote the sport’s growth, and deliver a memorable day of competition in one of Casablanca’s most iconic neighborhoods.
 
 ## Creative Process & Methodology
 

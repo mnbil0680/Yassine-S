@@ -29,9 +29,11 @@ tags:
 
 ## Project Overview
 
-I developed a comprehensive cultural brand identity for **U Morocco**, a premium brand celebrating Moroccan Islamic heritage and Ramadan traditions. This project showcased my expertise in photography, color editing, graphic design, and visual identity creation, delivering a culturally authentic brand presence that honors Islamic values while appealing to modern Moroccan consumers.
+U Maroc is a supermarket brand in Morocco that operates under the international “U” retail banner, known in France as Système U. Much like Carrefour, it is positioned as a modern retail chain offering a wide range of everyday products — from fresh groceries and household essentials to local specialties and branded goods — with a focus on accessibility and affordability.
 
-U Morocco needed a visual identity that would respectfully represent Islamic traditions, particularly during the holy month of Ramadan, while creating a memorable brand presence that resonates with Moroccan families and communities. The challenge was creating designs that balanced religious sensitivity with contemporary marketing effectiveness.
+The brand emphasizes “quality at the best price”, targeting families and individuals who want reliable products without overspending. U Maroc stores often highlight fresh produce, bakery, dairy, and butchery sections, while also providing household, beauty, and cleaning items, creating a one-stop shopping experience. Its competitive edge lies in offering private-label “U” products, which are designed to guarantee solid quality while remaining budget-friendly, directly comparable to Carrefour’s own-brand lines.
+
+In Morocco, U Maroc is steadily expanding its footprint, with stores typically located in urban and suburban areas, aiming to blend international retail standards with Moroccan consumer needs. The brand also invests in customer promotions, loyalty programs, and local marketing, positioning itself as a trustworthy alternative to established international players like Carrefour, Marjane, or Aswak Assalam, while maintaining a more approachable, neighborhood-friendly atmosphere.
 
 ## Creative Process & Methodology
 
